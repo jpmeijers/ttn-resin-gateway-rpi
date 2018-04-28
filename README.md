@@ -50,6 +50,18 @@ GW_RESET_PIN      | 22 (optional)
 
 GW_RESET_PIN can be left out if you are using Gonzalo Casas' backplane board, or any other setup using pin 22 as reset pin. This is because pin 22 is the default reset pin used by this resin.io setup.
 
+### Device environment variables - RAK831 with GPS
+
+For example a RAK831 gateway, which has a built-in GPS, you need:
+
+Name      	  	   | Value  
+------------------|--------------------------
+GW_ID             | The gateway ID from the TTN console
+GW_KEY            | The gateway KEY from the TTN console
+GW_FAKE_GPS       | false
+GW_GPS            | true
+GW_GPS_PORT       | /dev/ttyAMA0
+GW_RESET_PIN      | 11
 
 ### Device environment variables - with GPS
 
