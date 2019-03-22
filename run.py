@@ -29,7 +29,8 @@ if os.environ.get('HALT') != None:
   
  if os.environ.get("CELLULAR_WAIT") != None:
   cellular_wait_s = os.environ.get("CELLULAR_WAIT")
-  sleep(cellular_wait_s);
+  print ("*** Wait time for cellular connnection in s: "+str(os.environ.get('CELLULAR_WAIT')))
+  sleep(cellular_wait_s)
 
 # Show info about the machine we're running on
 print ("*** Resin Machine Info:")
