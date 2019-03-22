@@ -4,6 +4,8 @@ FROM resin/%%RESIN_MACHINE_NAME%%-debian:latest AS buildstep
 RUN apt-get update && \
     apt-get install wget build-essential libc6-dev git pkg-config protobuf-compiler libprotobuf-dev libprotoc-dev automake libtool autoconf python-dev python-rpi.gpio
 
+ENV UDEV=off
+
 WORKDIR /etc
 
 # versions
