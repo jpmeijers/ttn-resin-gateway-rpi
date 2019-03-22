@@ -26,6 +26,10 @@ if not os.path.exists("/opt/ttn-gateway/mp_pkt_fwd"):
 if os.environ.get('HALT') != None:
   print ("*** HALT asserted - exiting ***")
   sys.exit(0)
+  
+ if os.environ.get("CELLULAR_WAIT") != None:
+  cellular_wait_s = os.environ.get("CELLULAR_WAIT")
+  sleep(cellular_wait_s);
 
 # Show info about the machine we're running on
 print ("*** Resin Machine Info:")
