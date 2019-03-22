@@ -11,6 +11,8 @@ RUN ./dev/build.sh
 
 FROM resin/%%RESIN_MACHINE_NAME%%-debian:latest
 
+ENV UDEV=off
+
 WORKDIR /opt/ttn-gateway
 
 RUN apt-get update && \
