@@ -27,8 +27,8 @@ if os.environ.get('HALT') != None:
   print ("*** HALT asserted - exiting ***")
   sys.exit(0)
   
- if os.environ.get("CELLULAR_WAIT") != None:
-  cellular_wait_s = os.environ.get("CELLULAR_WAIT")
+ if os.environ.get('CELLULAR_WAIT') != None:
+  cellular_wait_s = os.environ.get('CELLULAR_WAIT')
   print ("*** Wait time for cellular connnection in s: "+str(os.environ.get('CELLULAR_WAIT')))
   sleep(cellular_wait_s)
 
