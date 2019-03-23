@@ -62,6 +62,18 @@ GW_KEY            | The gateway KEY from the TTN console
 GW_GPS            | true
 GW_RESET_PIN      | 29
 
+### Device environment variables - with cellular modem
+
+For example, for an HUAWEI MS2131 cellular modem, the MINIMUM environment variables that you should configure at this screen should look something like this:
+
+Name      	  	   | Value  
+------------------|--------------------------  
+GW_ID             | The gateway ID from the TTN console
+GW_KEY            | The gateway KEY from the TTN console
+GW_RESET_PIN      | 22 (optional)
+CELLULAR_WAIT     | 240
+
+run.py will wait for 240s until cellular modem connection is ready to pull data from internet. Time should be adjusted to your setup. If wait time is too short, gateway will not start sucesfull. 
 
 ## Reset pin values
 
