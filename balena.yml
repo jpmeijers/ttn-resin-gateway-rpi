@@ -1,0 +1,19 @@
+version: "2"
+slug: "ttn-resin-gateway-rpi"
+name: "TTN Gateway for Raspberry Pi"
+type: "sw.application"
+assets:
+  - url: "https://github.com/jpmeijers/ttn-resin-gateway-rpi"
+    name: "repository"
+  - url: "https://www.thethingsnetwork.org/spa/static/img/b403019.png"
+    name: "logo"
+data:
+  description: "Deploy Raspberry Pi based gateways to The Things Network using balenaCloud"
+  defaultDeviceType: "raspberry-pi"
+  supportedDeviceTypes:
+    - "raspberry-pi"
+    - "raspberry-pi2"
+    - "raspberrypi3"
+    - "raspberrypi3-64"
+    - "raspberrypi4-64"
+    - "fincm3"
